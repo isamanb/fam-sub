@@ -8,7 +8,7 @@ if ((isset($_SERVER['HTTP_USER_AGENT']) and empty($_SERVER['HTTP_USER_AGENT'])) 
 if (!function_exists('str_contains')) die('Please upgrade your PHP version to 8 or above');
 $isTextHTML=str_contains(($_SERVER['HTTP_ACCEPT']??''),'text/html');
 
-const BASE_URL="https://YOUR_IP:PORT"; // Replace IP address and port
+const BASE_URL="https://new.famvpn.com:8443"; // Replace IP address and port
 
 $URL=BASE_URL.$_SERVER['SCRIPT_URL']??'';
 $URL .= $isTextHTML?'/info':'';
